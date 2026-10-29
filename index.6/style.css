@@ -91,10 +91,10 @@ body {
 .mega-menu {
     display: none;
     position: absolute;
-    top: 85px;
-    left: -650px;
-    width: 1100px;
-    background-color: white;
+    top: 83px;
+    left: -750px;
+    width: 1200px;
+    background-color: #FFFFFF;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
 }
@@ -113,7 +113,6 @@ body {
 
 .course-column {
     width: 20%;
-    min-width: 0;
     font-size: small;
 }
 
@@ -160,7 +159,6 @@ body {
 
 .top-card {
     width: 25%;
-    min-width: 0;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -231,4 +229,53 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+}
+@media screen and (max-width:768px){
+    .max-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links{
+         flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        padding-top: 30px;
+    }
+    .logo{
+         padding-top: 30px;
+    }
+    .Enroll{
+        border-radius: 2px;
+        padding: 10px 100px;
+    }
+    .mega-menu{
+        position: absolute;
+       overflow: scroll;
+       height: 350px;
+        top: 20px;
+        left: -20px;
+        max-width: 260px;
+    }
+    .course-columns{
+        flex-direction: column;
+        padding: 0px;
+        padding-left: 30px;
+    }
+    .course-column{
+        width: 200px;
+    }
+    .course-column a{
+        margin: 10px;
+        margin-left: 23px;
+    }
+    .course-column h4{
+        margin-top: 5px;
+    }
+    .top-course-cards{
+        flex-direction: column;
+    }
+    .top-card{
+        width: 200px;
+        padding: 2px 10px;
+    }
 }
